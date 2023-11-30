@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    const { animal, emotion, action, place } = req.body;
+    const { noun, adjective, verb, adverb } = req.body;
     const story = `The ${emotion} ${animal} ${action} ${place} with excitement.`;
     // Re-render the same page with the story
     res.render('index', { story: story });
